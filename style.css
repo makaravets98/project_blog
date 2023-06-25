@@ -117,15 +117,21 @@ body>header{
     padding: 50px 35px;
     display: block;
     border-bottom: 6px solid #292929;
+  
     
 }
 .menu_1 li a:hover{
     color: #58c93a;
     border-bottom: 6px solid #58c93a;
+    border-left: 1px solid #1d1d1d;
+    border-right: 1px solid #1d1d1d;
+    box-sizing: border-box;
 }
 .center_block_main_main{
     margin: 0 auto;
     max-width: 990px;
+    border-left: 1px solid #e1e0e0;
+    border-right: 1px solid #e1e0e0;
 }
 main{
     float: left;
@@ -189,8 +195,9 @@ aside{
     color: #b9b9b9;
     font-size: 0.75em;
     width: 100%;
-    border: 1px solid #b9b9b9;
+    border: 1px solid #e1e0e0;
     padding: 15px 20px;
+    border-right: none;
 }
 .widget>nav{
     margin-left: 20px;
@@ -199,12 +206,13 @@ aside{
     color: #b9b9b9;
     font-size: 0.75em;
     width: 100%;
-    border: 1px solid #b9b9b9;
+    border: 1px solid #e1e0e0;
     padding: 15px 50px 15px 20px;
     box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 0;
+    border-right: none;
 }
 .subscribe{
     position: relative;
@@ -246,12 +254,19 @@ footer{
     background-color: #f8f8f8;
     border-top: 1px solid #e1e0e0;
     text-align: center;
+   
+}
+footer>.center_block_main_main{
+    border-left: none;
+    border-right: none;
 }
 footer>.center_block_main_main>p{
     font-size: 0.8125em;
     color: #d2d2d2;
     padding-top: 40px;
     padding-bottom: 40px;
+    border-left: none;
+    border-right: none;
 }
 footer img{
     padding-top: 40px;
