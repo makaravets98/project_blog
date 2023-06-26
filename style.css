@@ -117,8 +117,6 @@ body>header{
     padding: 50px 35px;
     display: block;
     border-bottom: 6px solid #292929;
-  
-    
 }
 .menu_1 li a:hover{
     color: #58c93a;
@@ -142,9 +140,25 @@ article{
     margin-bottom: 80px;
 }
 article>header{
-    font-size: 0;
     background:none;
     margin-bottom: 21px;
+    position: relative;
+}
+article>header:hover .publish{
+    display: block;
+    bottom: 5px;
+}
+.publish{
+    font-size: 0.8125em;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: absolute;
+    bottom: -33px;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
+    transition: bottom 0.5s linear;
 }
 article>h2{
     font-size: 1.75em;
@@ -166,6 +180,7 @@ a.more{
     padding: 7px 20px;
     display: inline-block;
     border-radius: 20px;
+    text-decoration: none;
 }
 a.more:hover{
     color: #339933;
@@ -241,8 +256,8 @@ aside{
     text-decoration: none;
 }
 .pager a:hover{
-color: #339933;
-text-decoration: underline;
+    color: #339933;
+    text-decoration: underline;
 }
 .previous_link{
     float: left;
@@ -254,7 +269,6 @@ footer{
     background-color: #f8f8f8;
     border-top: 1px solid #e1e0e0;
     text-align: center;
-   
 }
 footer>.center_block_main_main{
     border-left: none;
@@ -272,5 +286,47 @@ footer img{
     padding-top: 40px;
 }
 
+
+@media screen and (max-width:768px) {
+    aside{
+        float: none;
+        width: 100%;
+    }
+    main{
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    article>header img{
+        width: 100%;
+    }
+    .logo{
+        margin-top: 20px;
+    }
+    .menu_1 li a{
+        padding: 25px 35px;
+    }
+    .widget_photo{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .center_block_main_header{
+        margin: 0 auto;
+        max-width: 990px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu_1 li a{
+        padding: 10px 35px 10px 35px;
+    }
+    .logo{
+        margin-top: 10px;
+    }
+}
 
 
